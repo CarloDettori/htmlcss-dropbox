@@ -24,22 +24,29 @@ ul {
 
 /* assets ____________________________________________________________*/
 
-.big-container {
+.big-cont {
     width: 100%;
 }
 
-.container {
+.cont {
     max-width: 1200px;
 }
 
-.small-container {
+.small-cont {
     max-width: 800px;
 }
 
-.big-container, .container, .small-container {
+.big-cont, .cont, .small-cont {
     margin: 0 auto;
 }
 
+.square {
+    width: calc(100% / 3);
+}
+
+svg {
+    width: 50%;
+}
 
 
 /* header ________________________________________________________________*/
@@ -85,7 +92,6 @@ tbody>tr>td {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -152,9 +158,16 @@ tbody>tr>td {
     display: flex;
 }
 
+.justify-content-left {
+    justify-content: flex-start;
+}
+
 .space-between {
-    display: flex;
     justify-content: space-between;
+}
+
+.align-item-center {
+    align-items: center;
 }
 
 .wrap {
@@ -162,6 +175,5 @@ tbody>tr>td {
 }
 
 .column-flex {
-    display: flex;
     flex-direction: column;
 }
