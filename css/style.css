@@ -158,7 +158,7 @@ tbody>tr>td {
 }
 
 .wrap {
-    display: wrap;
+    flex-wrap: wrap;
 }
 
 .column-flex {
