@@ -43,6 +43,7 @@ ul {
 
 
 /* header ________________________________________________________________*/
+
 header {
     /* color: white; */
 }
@@ -61,15 +62,14 @@ header {
 }
 
 
-
-nav {
-
-}
-
 /* main ________________________________________________________________*/
 
-
 tbody>tr>td {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
     display: flex;
     justify-content: space-between;
 }
