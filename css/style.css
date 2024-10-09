@@ -83,5 +83,9 @@ tbody>tr>td {
     display: flex;
 }
 
+.wrap {
+    display: wrap;
+}
+
 
 
