@@ -44,7 +44,7 @@ li {
 
 /* strumenti _________________________________________________________*/
 
-.debrug {
+.debugz {
     border: 1px solid red;
 }
 
@@ -58,6 +58,10 @@ li {
 
 
 /* assets ____________________________________________________________*/
+
+section, con6 {
+    padding: 0 10px;
+}
 
 .big-cont {
     width: 100%;
@@ -75,8 +79,40 @@ li {
     max-width: 800px;
 }
 
-section {
-    padding: 50px 0;
+
+
+#sec2 {
+    background-color: var(--color-jambo-backgrownd);
+    padding: 50px 10px 0px;
+    margin-bottom: 0;
+}
+
+#sec3 {
+    padding-top: 100px
+}
+
+#sec4 {
+    padding 20px;
+}
+
+#sec5 {
+    padding: 100px 20px;
+}
+
+
+#sec9 {
+    background-color: var(--color-call-act-bg);
+    padding: 150px 10px;
+}
+
+#sec10 {
+    padding: 100px 10px;
+
+    
+}
+
+#sec6, #sec7, #sec11 {
+    padding: 50px 10px;
 }
 
 .big-cont:not(#con1,#con8), .cont, .small-cont {
@@ -90,7 +126,7 @@ section {
 
 h1 {
     font-size: 300%;
-    padding-bottom: 10px;
+    margin-top: 50px
 }
 
 h2 {
@@ -101,13 +137,13 @@ div#con11>div>h3 {
     padding-left: 40px;
 }
 
-h1, h2, h3, h4, p, li {
+h1, h2, h4, p, li {
     padding-bottom: 20px;
 }
 
 .button {
-    padding: 5px 15px;
-    border-radius: 20px;
+    font-size: 80%;
+    padding: 10px 30px;
 }
 
 .blue-button {
@@ -116,7 +152,9 @@ h1, h2, h3, h4, p, li {
 }
 
 .white-button {
-    background-color: var(--color-blue-buttons-color);
+    border: 2px solid grey;
+    color: black;
+    background-color: var(--color-white-button-color);
 }
 
 /* custom variables ______________________________________________________*/
@@ -149,6 +187,9 @@ header {
     z-index: 5;
 }
 
+nav.top-nav>a {
+    padding: 0 10px;
+}
 
 #logo {
     padding: 10px;
@@ -160,7 +201,7 @@ ul.top-links>li, ul.bottom-links>li {
 }
 
 ul.top-links>li:hover {
-    border-bottom: 3px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 nav>a.button {
@@ -178,7 +219,7 @@ ul.top-links>li>a, ul.bottom-links>li>a {
 
 }
 
-div#con11>div>div>h2{
+div#con1>div>div>h2 {
     padding: 0 10px;
 }
 
@@ -200,30 +241,25 @@ div#con11>div>div>h2{
 
 /* main ________________________________________________________________*/
 
-#sec2 {
-    background-color: var(--color-jambo-backgrownd);
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
+
 
 #freccia {
     font-size: 300%;
     align-self: flex-end;
     color: black;
+    padding-bottom: 10px;
 }
 
-#sec2, #sec3 {
-    padding-top: 50px;
-}
+
 
 #jumbo-img {
     position: relative;
-    top: 30px;
+    top: 50px;
     width: 70%;
 }
 
 .jumbo-text {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .column-title {
@@ -233,6 +269,12 @@ div#con11>div>div>h2{
 
 .nice-grey-border {
     border: 1px solid lightgrey;
+}
+
+
+
+#enter-button-box {
+    padding: 30px;
 }
 
 .row-3 {
@@ -259,6 +301,8 @@ div#con11>div>div>h2{
     border-bottom: 1px solid lightgray;
 }
 
+
+
 .col-6 {
     width: calc((100% - 100px) / 3);
     margin-top: 20px;
@@ -268,10 +312,13 @@ div.col-6>h3 {
     padding: 20px 0;
 }
 
+
 .line {
     width: 50px;
     border: 1px solid lightgrey;
     margin: 15px 0;
+    position: absolute;
+    
 }
 
 #talk-guys {
@@ -290,8 +337,13 @@ div#con7>* {
     padding-bottom: 100px;
 }
 
+#enterprise-text {
+    width: 70%;
+}
+
 #enterprise-text, .plan {
     padding: 30px;
+    position: relative;
 }
 
 .col>*, .enterprise-box>* {
