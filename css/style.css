@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+a :not(.button):not(.button-nav):not(ul.top-links>li) {
+    color: var(--color-blue-buttons-color)
+}
+
 /* font _______________________________________________________________*/
 
 body {
@@ -19,14 +28,33 @@ body {
     font-style: normal;
 }
 
+.colblock1 {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
 
+.upline {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-img {
+div.lyer>a {
+    margin-top: 40px;
+}
+
+.line {
     display: block;
-    width: 100%;
+    margin-left: 30px;
+    width: 50px;
+    border: 1px solid lightgrey;
 }
 
 ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -55,7 +83,7 @@ a {
 
 /* assets ____________________________________________________________*/
 
-section, con6 {
+section {
     padding: 0 10px;
 }
 
@@ -68,14 +96,12 @@ section, con6 {
 }
 
 .cont {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .small-cont {
     max-width: 800px;
 }
-
-
 
 #sec2 {
     background-color: var(--color-jambo-backgrownd);
@@ -123,8 +149,10 @@ section, con6 {
     text-decoration: underline;
 }
 
+
+
 h1 {
-    font-size: 300%;
+    font-size: 400%;
     margin-top: 50px
 }
 
@@ -141,24 +169,47 @@ h3 {
     padding-bottom: 20px;
 } 
 
-.ulsec {
-    margin-bottom: 140px;
+il {
+    display: block;
+    padding: 5px 0;
+}
+
+.ulsec3 {
+    display: flex;
+
+
 }
 
 ul.ulsec3>li {
-    padding: 10px 0;
-    
+    padding: 10px 0;    
 }
 
-h1, h4, p {
+
+h4, p {
     padding-bottom: 20px;
 }
 
 .button {
+    display: block;
     font-size: 0.8em;
     padding: 10px 30px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    text-align: center;
 }
+
+#button-nav {
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 15px 0 10px 30px;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+
+.button:hover, #button-nav:hover {
+    opacity: 0.8;
+}
+
 
 .blue-button {
     color: white;
@@ -201,34 +252,26 @@ header {
     z-index: 5;
 }
 
-nav.top-nav>a {
-    padding: 0 10px;
-}
+
 
 #logo {
-    padding: 10px;
+    padding: 10px 20px 10px 0;
     margin-top: 5px
 }
 
-ul.top-links>li {
-    margin: 20px 0;
-}
 
 ul.top-links>li:hover {
     border-bottom: 1px solid grey;
 }
 
-nav>a.button {
-    padding: 10px;
-    margin-top: 15px;
-}
+
 
 ul.bottom-links>li>a {
     height: 100%;
-    margin-top: opx;
 }
 
 ul.top-links>li>a {
+    display:block;
     height: 100%;
     margin-top: 20px;
     padding: 0 10px;
@@ -242,10 +285,12 @@ div#con1>div>div>h2 {
 #con1 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .top-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -266,16 +311,32 @@ div#con1>div>div>h2 {
     padding-bottom: 10px;
 }
 
+#jumbo-img {
+    top: 40px;
+}
 
+#up-arrow {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 #jumbo-img {
+    display: flex;
+    align-self: flex-start;
     position: relative;
-    top: 50px;
     width: 70%;
+    height: auto;
 }
 
 .jumbo-text {
-    margin: 50px 0;
+
+    padding-top: 10px;
+}
+
+#jumbo-button {
+    padding: 10px 30px;
 }
 
 .column-title {
@@ -306,9 +367,10 @@ div#con1>div>div>h2 {
     flex-wrap: wrap;
 }
 
-.col-2 {
+.col-3 {
     border: 1px solid lightgray;
-    width: calc((100% - 40px) / 3);   
+    width: calc((100% - 40px) / 3);
+    min-width: 30%;
 }
 
 .name {
@@ -329,14 +391,6 @@ div.col-6>h3 {
 }
 
 
-
-.line {
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin: 15px 0;
-    position: absolute;
-    
-}
 
 #talk-guys {
     width: calc(70% - 20px);

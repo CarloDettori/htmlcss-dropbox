@@ -34,7 +34,7 @@
                         <li class="debug"><a href="">Accedi</a></li>
                         <li class="debug"></li>
                     </ul>
-                    <a class="blue-button" href="">Inizia</a>
+                    <a id="button-nav" class="blue-button" href="">Inizia</a>
                 </nav>
             </div>
         </section>
@@ -47,11 +47,11 @@
                 <h1>Tutto cio che ti serve per il lavoro, in un unico posto </h1>
                 <div class="flex">
                     <!-- text + button + text -->
-                    <div class="flex column-flex space-between">
-                        <div>
+                    <div class="flex column-flex">
+                        <div id="up-arrow">
                             <p class="debug jumbo-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil culpa praesentium, ipsam officia animi voluptatem laudantium harum et amet, quos illum possimus! Doloribus recusandae nisi natus, repudiandae dolorem quidem? Expedita!</p>
-                            <a href="" class="button blue-button jumbo-text">Inizia la prova gratuita</a>
-                            <p class="debug jumbo-text">Annulla in qualsiasi momento</p>
+                            <a href="" class="button blue-button">Inizia la prova gratuita</a>
+                            <p id="jumbo-button" class="debug jumbo-text">Annulla in qualsiasi momento</p>
                         </div>
                         <div>
                             <i id="freccia" class="fa-solid fa-arrow-down"></i>
@@ -81,34 +81,38 @@
                 <!-- row 1-professional 2-advanced 3-enterprise -->
                 <div class="row-3">
                     <!-- 1-professional -->
-                    <div class="col-2">
-                        <div>
+                    <div class="col-3">
+                        <div class="colblock1">
                             <!-- name 1 -->
                             <div>
                                 <p class="debug name">Singolo</p>
                             </div>
-                            <div class="plan">
+                            <div class="plan upline">
                                 <!-- offer 1 -->
-                                <h3 class="debug h3sec3">Professional</h3>
-                                <h4 class="debug">€ 12.00</h4>
-                                <p class="debug">/mese</p>
-                                <ul class="debug ulsec3">
-                                    <li class="debug">1 utente</li>
-                                    <li class="debug">5 TB di spazio di archiviazione sicuro </li>
-                                    <li class="debug">funzioni di produttività premium e condivisione file semplici e sicura</li>
-                                </ul>  
-                                <!-- free tryal button 1  -->
-                                    <a href="" class="debug button blue-button">Prova gratis per 30 giorni</a>
-                                <!-- buy 1 -->
-                                <div class="flex">
-                                    <p class="debug top-padding-20px">oppure</p>
-                                    <a class="debug keep-under left-padding-10px top-padding-20px" href="">acquista ora</a>
-                                </div>    
-                                <!-- line 1 -->
-                                <div class="line"></div>
+                                <div>
+                                    <h3 class="debug h3sec3">Professional</h3>
+                                    <h4 class="debug">€ 12.00</h4>
+                                    <p class="debug">/mese</p>
+                                </div>
+                                <div class="lyer">
+                                    <ul class="debug ulsec3">
+                                        <li class="debug">1 utente</li>
+                                        <li class="debug">5 TB di spazio di archiviazione sicuro </li>
+                                        <li class="debug">funzioni di produttività premium e condivisione file semplici e sicura</li>
+                                    </ul>  
+                                    <!-- free tryal button 1  -->
+                                        <a href="" class="debug button blue-button">Prova gratis per 30 giorni</a>
+                                    <!-- buy 1 -->
+                                    <div class="flex">
+                                        <p class="debug top-padding-20px">oppure</p>
+                                        <a class="debug keep-under left-padding-10px top-padding-20px" href="">acquista ora</a>
+                                    </div>    
+                                </div>
                             </div>
                         </div>
-                        <div class="plan">  
+                        <!-- line 1 -->
+                                <div class="line"></div>
+                        <div class="plan colblocl2">  
                             <!-- features 1 -->
                             <h4 class="debug">punti salienti del piano</h4>
                             <ul class="debug ulsec3">
@@ -118,74 +122,81 @@
                         </div>    
                     </div>
                     <!-- 2-advanced -->
-                    <div class="col-2">
-                        <div>
+                    <div class="col-3">
+                        <div class="colblock1">
                             <!-- name 2 -->
                             <div>
                                 <p class="debug name">Team</p>
                             </div>
-                            <div class="plan">
+                            <div class="plan upline">
                                 <!-- offer 2 -->
-                                <h3 class="debug h3sec3">Advanced</h3>
-                                <h4 class="debug">€ 18.00</h4>
-                                <p class="debug">/utente/mese</p>
-                                <ul class="debug ulsec3">
-                                    <li class="debug">3 o piu utenti</li>
-                                    <li class="debug">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur!</li>
-                                    <li class="debug">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quia.</li>
-                                </ul>  
-                                <!-- free tryal button 2  -->
-                                <a href="" class="debug button blue-button">Prova gratis per 30 giorni</a>
-                                <!-- buy 2 -->
-                                <div class="flex">
-                                    <p class="debug top-padding-20px">oppure</p>
-                                    <a class="debug keep-under left-padding-10px top-padding-20px" href="">acquista ora</a>
+                                <div>
+                                    <h3 class="debug h3sec3">Advanced</h3>
+                                    <h4 class="debug">€ 18.00</h4>
+                                    <p class="debug">/utente/mese</p>
                                 </div>
-                                <!-- line 2 -->
-                                <div class="line"></div>
+                                <div class="lyer">
+                                    <ul class="debug ulsec3">
+                                        <li class="debug">3 o piu utenti</li>
+                                        <li class="debug">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur!</li>
+                                        <li class="debug">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quia.</li>
+                                    </ul>  
+                                    <!-- free tryal button 2  -->
+                                    <a href="" class="debug button blue-button">Prova gratis per 30 giorni</a>
+                                    <!-- buy 2 -->
+                                    <div class="flex">
+                                        <p class="debug top-padding-20px">oppure</p>
+                                        <a class="debug keep-under left-padding-10px top-padding-20px" href="">acquista ora</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="plan">  
+                        <!-- line 2 -->
+                        <div class="line"></div>
+                        <div class="plan colblock2">  
                             <!-- features 2 -->
-                            <h4 class="debug">punti salienti del piano</h4>
+                            <h4 class="debug">Punti salienti del piano</h4>
                             <ul class="debug ulsec3">
                                 <li class="debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nemo?</li>
                                 <li class="debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quibusdam!</li>
                                 <li class="debug">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perferendis?</li>
                                 <li class="debug">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, laudantium.</li>
                                 <li class="debug">lore10
-
                                 </li>
                             </ul>
                         </div>    
                     </div>
                     <!-- 3-enterprise -->
-                    <div class="col-2">
-                        <div>
+                    <div class="col-3">
+                        <div class="colblock1">
                             <div>
                                 <!-- name 3 -->
                                 <p class="debug name">Azientda</p>
                             </div>
-                            <div class="plan">
+                            <div class="plan upline">
                                 <!-- offer 3 -->
-                                <h3 class="debug h3sec3">Enterprise</h3>
-                                <h4 class="debug">Contattaci</h4>
-                                <ul class="debug ulsec3">
-                                    <li class="debug">10 o piu utenti</li>
-                                    <li class="debug">Lorem ipsum dolor sit amet.</li>
-                                    <li class="debug">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, distinctio.</li>
-                                </ul>  
-                                <!-- contact button 3 -->
-                                <a href="" class="debug button blue-button">contattaci</a>
-                                <!-- buy 3 -->
-                                <div class="flex">
+                                <div>    
+                                    <h3 class="debug h3sec3">Enterprise</h3>
+                                    <h4 class="debug">Contattaci</h4>
+                                </div>
+                                <div class="lyer">
+                                    <ul class="debug ulsec3">
+                                        <li class="debug">10 o piu utenti</li>
+                                        <li class="debug">Lorem ipsum dolor sit amet.</li>
+                                        <li class="debug">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, distinctio.</li>
+                                    </ul>  
+                                    <!-- contact button 3 -->
+                                    <a href="" class="debug button blue-button">contattaci</a>
+                                    <!-- buy 3 -->
+                                    <div class="flex">
                                     <p class="debug top-padding-20px">oppure</p>
                                     <a class="debug keep-under left-padding-10px top-padding-20px" href="">acquista ora</a>
+                                    </div>
                                 </div>
-                                <!-- line 3 -->
-                                <div class="line"></div>
                             </div>
                         </div>
+                        <!-- line 3 -->
+                                <div class="line colblock2"></div>
                         <div class="plan">  
                             <!-- features 3 -->
                             <h4 class="debug">punti salienti del piano</h4>
