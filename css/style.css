@@ -37,10 +37,6 @@ a {
 
 
 
-li {
-
-}
-
 
 /* strumenti _________________________________________________________*/
 
@@ -111,14 +107,17 @@ section, con6 {
     
 }
 
-#sec6, #sec7, #sec11 {
+#sec6, #sec7 {
     padding: 50px 10px;
+}
+
+#sec11 {
+    padding: 80px 10px 40px;
 }
 
 .big-cont:not(#con1,#con8), .cont, .small-cont {
     margin: 0 auto; 
 }
-
 
 .keep-under {
     text-decoration: underline;
@@ -130,20 +129,35 @@ h1 {
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 300%;
+    padding-bottom: 80px;
 }
 
-div#con11>div>h3 {
-    padding-left: 40px;
+h3 {
+    font-size: 200%;
 }
 
-h1, h2, h4, p, li {
+.h3sec3 {
+    padding-bottom: 20px;
+} 
+
+.ulsec {
+    margin-bottom: 140px;
+}
+
+ul.ulsec3>li {
+    padding: 10px 0;
+    
+}
+
+h1, h4, p {
     padding-bottom: 20px;
 }
 
 .button {
-    font-size: 80%;
+    font-size: 0.8em;
     padding: 10px 30px;
+    margin-bottom: 10px;
 }
 
 .blue-button {
@@ -196,8 +210,8 @@ nav.top-nav>a {
     margin-top: 5px
 }
 
-ul.top-links>li, ul.bottom-links>li {
-    margin-top: 20px;
+ul.top-links>li {
+    margin: 20px 0;
 }
 
 ul.top-links>li:hover {
@@ -209,13 +223,15 @@ nav>a.button {
     margin-top: 15px;
 }
 
+ul.bottom-links>li>a {
+    height: 100%;
+    margin-top: opx;
+}
 
-
-ul.top-links>li>a, ul.bottom-links>li>a {
+ul.top-links>li>a {
     height: 100%;
     margin-top: 20px;
     padding: 0 10px;
-    align
 
 }
 
@@ -313,6 +329,7 @@ div.col-6>h3 {
 }
 
 
+
 .line {
     width: 50px;
     border: 1px solid lightgrey;
@@ -373,6 +390,22 @@ svg {
     width: 50%;
 }
 
+select {
+    padding: 20px 0;
+    border: none;
+    border-top: 2px solid white;
+}
+
+#footer-select {
+    background-color: #000000;
+    color: white;
+    margin-top: 100px;
+}
+
+.faq-line {
+    border-top: 1px solid black;
+}
+
 
 
 /* footer ________________________________________________________________*/
@@ -384,6 +417,14 @@ footer {
 
 ul.bottom-links>li>a {
     color: white;
+}
+
+ul.bottom-links>li {
+    padding: 10px 0;
+}
+
+.footer-title {
+    padding-bottom: 40px;
 }
 
 /* check box ___________________________________________________from w3s__*/
